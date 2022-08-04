@@ -14,7 +14,11 @@ export class PokemonDetail {
 }
 
 class Ability {
-  constructor(public name: string | null = null) {}
+  constructor(
+    public ability: {
+      name: string | null;
+    }
+  ) {}
 }
 class Species {
   constructor(public url: string | null = null) {}
@@ -23,7 +27,7 @@ class Type {
   constructor(
     public slot: number | null = null,
     public type: {
-      slot: string | null;
+      name: string | null;
     }
   ) {}
 }

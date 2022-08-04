@@ -6,10 +6,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './shared/material.module';
+import { PokemonListComponent } from './components/pokemon-list/pokemon-list.component';
+import { PokemonDetailComponent } from './components/pokemon-detail/pokemon-detail.component';
+import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PokemonListComponent,
+    PokemonDetailComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,
